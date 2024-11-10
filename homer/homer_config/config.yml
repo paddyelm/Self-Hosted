@@ -1,0 +1,12 @@
+---
+title: "Ninth Circle"
+subtitle: "Welcome to the Ninth Circle"
+logo: "assets/logo.png"
+header: true
+
+# Services
+services:
+  - name: "Home Assistant"
+    logo: "assets/homeassistant.png"
+    url: "http://192.168.1.126/homeassistant"
+    target: "_blank"

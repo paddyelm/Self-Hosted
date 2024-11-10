@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  homer:
+    image: b4bz/homer:latest
+    container_name: homer
+    volumes:
+      - ./homer_config:/www/assets
+    restart: unless-stopped
+    networks:
+      - main_network
