@@ -2,17 +2,17 @@ version: '3.8'
 services:
   homeassistant:
     extends:
-      file: docker-compose.homeassistant.yml
+      file: home-assistant/docker-compose.homeassistant.yml
       service: homeassistant
 
   homer:
     extends:
-      file: docker-compose.homer.yml
+      file: homer/docker-compose.homer.yml
       service: homer
 
   nginx:
     extends:
-      file: docker-compose.nginx.yml
+      file: nginx/docker-compose.nginx.yml
       service: nginx
 
 networks:

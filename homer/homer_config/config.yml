@@ -1,12 +1,19 @@
 ---
 title: "Ninth Circle"
 subtitle: "Welcome to the Ninth Circle"
-logo: "assets/logo.png"
+logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/homer.png"
 header: true
+
+theme: dark
 
 # Services
 services:
-  - name: "Home Assistant"
-    logo: "assets/homeassistant.png"
-    url: "http://192.168.1.126/homeassistant"
-    target: "_blank"
+  - name: "Automation"
+    icon: "fa-solid fa-bolt"
+    items:
+    - name: "Home Assistant"
+      logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/home-assistant-alt.png"
+      subtitle: "Open source home automation that puts local control and privacy first."
+      url: "http://192.168.1.126/homeassistant"
+      tag: "home assistant"
+      target: "_blank"
