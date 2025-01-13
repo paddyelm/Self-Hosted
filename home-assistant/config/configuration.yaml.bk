@@ -1,0 +1,29 @@
+# Example configuration.yaml
+default_config:
+
+# Uncomment this to enable a Web UI configuration editor
+config:
+
+# Replace with your own setup
+homeassistant:
+#  name: !secrets name
+#  latitude: !secrets latitude
+#  longitude: !secrets longitude
+#  elevation: !secrets elevation
+  unit_system: metric
+  currency: EUR
+#  external_url: !secrets external_url
+#  internal_url: !secrets internal_url
+  allowlist_external_dirs:
+    - "/opt/selfhost/homeassistant"
+
+# Example integrations
+#sensor:
+#  - platform: systemmonitor
+#    resources:
+#      - type: disk_use_percent
+#        arg: /
+#      - type: memory_free
+
+# Add users, integrations, and automations via the Home Assistant UI
+

@@ -1,2 +1,12 @@
-secret.yml
-secret.yaml
+secrets.yml
+secrets.yaml
+home-assistant/config/secrets.yaml
+*.log.*
+*.log
+*.db-*
+*.db
+home-assistant/config/tts
+home-assistant/config/deps
+home-assistant/config/.storage
+*.cloud
+home-assistant/config/.HA_VERSION

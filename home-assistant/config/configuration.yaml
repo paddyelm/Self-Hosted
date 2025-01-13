@@ -2,10 +2,28 @@
 # Loads default set of integrations. Do not remove.
 default_config:
 
+logger:
+  default: debug
+
 # Load frontend themes from the themes folder
 frontend:
   themes: !include_dir_merge_named themes
 
-automation: !include automations.yaml
-script: !include scripts.yaml
-scene: !include scenes.yaml
+#automation: !include automations.yaml
+#script: !include scripts.yaml
+#scene: !include scenes.yaml
+
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 172.18.0.11 
+
+onvif:
+  cameras:
+    - host: !secret camera_of_ip
+      username: !secret camera_username
+      password: !secret camera_password
+    - host: !secret camera_fd_ip
+      username: !secret camera_username
+      password: !secret camera_password
+

@@ -5,8 +5,10 @@ services:
     container_name: nginx
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./log:/var/log/nginx
     ports:
       - "80:80"
     restart: unless-stopped
     networks:
-      - main_network
+      main_network:
+        ipv4_address: 172.18.0.11
