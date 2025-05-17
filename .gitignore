@@ -10,3 +10,4 @@ home-assistant/config/deps
 home-assistant/config/.storage
 *.cloud
 home-assistant/config/.HA_VERSION
+.env

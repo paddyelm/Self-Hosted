@@ -18,10 +18,12 @@ Before you begin, ensure you have the following installed on your server:
 
 2. Navigate to the directory containing the `docker-compose.yml` file.
 
+3. Make sure to create the .env file from the example [env_example](./env_example)
+
 3. Run the following command to start the services:
 
 ```bash
-docker-compose up -d
+sh ./bin/start.sh
 ```
 This command will start all the services defined in the `docker-compose.yml` file in detached mode.
 
@@ -36,3 +38,8 @@ The configuration for Homer is located in the homer/homer-config/config.yml dire
 The Nginx configuration files are located in the nginx/nginx.config directory. You can edit these files to change the Nginx server settings as required.
 
 Make sure to restart the respective services after making any configuration changes to apply them.
+
+
+#### Home ASsistant configurations
+The Home assistant configurations is located in the home-assistant/config directory.
+

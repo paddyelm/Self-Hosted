@@ -27,3 +27,8 @@ onvif:
       username: !secret camera_username
       password: !secret camera_password
 
+input_text:
+  bae_bae_medo_checkin_log:
+    name: Bae Bae Medo Checkin Log
+    max: 1000
+
