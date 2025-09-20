@@ -11,5 +11,10 @@ services:
     privileged: true
     ports:
       - "8123:8123"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1g"
+        max-file: "3"
     networks:
       - main_network
